@@ -65,7 +65,6 @@ button:hover {
   background-color: #b3b527;
 }
 
-
 /* ProjectDetail  */
 
 .project-detail {
@@ -159,3 +158,22 @@ textarea {
 .submit-button:hover {
   background-color: #0056b3;
 }
+
+/* Navbar search */
+
+.navbar-search-results {
+  position: relative;
+  margin-left: 50px !important;
+  top: 100%;
+  left: 0px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  z-index: 999; 
+}
+
+.navbar-search-results-right {
+  margin-left: 1130px !important;
+}
+

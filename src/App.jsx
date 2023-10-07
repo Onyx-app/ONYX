@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavbarComp";
 import { AuthProvider } from "./context/AuthContext";
 import ChatRoom from "./pages/ChatRoom";
 import Home from "./pages/Home";
@@ -10,6 +10,8 @@ import AddUsers from "./pages/AddUsers";
 import { PrivateRoute } from "./routes/PrivateRoute";
 import { PageProvider, usePageContext } from "./components/PageContext";
 import ContactForm from "./pages/ContactForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
