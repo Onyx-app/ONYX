@@ -1,0 +1,37 @@
+/* Style headers */
+.markdown-content h1 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  
+  .markdown-content h2 {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  
+  /* Style links */
+  .markdown-content a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .markdown-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style code blocks */
+  .markdown-content pre {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+    padding: 8px;
+    overflow: auto;
+    margin-bottom: 16px;
+  }
+  
+  .markdown-content code {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 13px; /* Smaller text size */
+    color: #333;
+  }
+  

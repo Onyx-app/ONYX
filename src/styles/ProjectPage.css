@@ -1,0 +1,50 @@
+.projects-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.my-projects {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.recommended-projects {
+  margin-top: 30px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Style for the section titles */
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
