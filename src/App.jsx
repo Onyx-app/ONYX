@@ -24,7 +24,7 @@ function App() {
           <Route path="/project/:title" element={<ProjectDetail />} />
           <Route path="/new-project" element={<ProjectSubmit />} />
           <Route path="/add-user/:projectTitle" element={<AddUsers />} />
-          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/contact/:projectTitle" element={<ContactForm />} />
           <Route
             path="/chat"
             element={
