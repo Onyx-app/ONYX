@@ -25,7 +25,7 @@ const ContactForm = () => {
   return (
     <div className="center-container">
       <div className="form-container">
-        <h2>Contact Us</h2>
+        <h1>Contact Us</h1>
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Name</label>

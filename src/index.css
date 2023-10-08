@@ -25,11 +25,25 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.form-container h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #e4dede;
   font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 33px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .form-group {

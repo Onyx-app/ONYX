@@ -12,9 +12,11 @@ const Message = ({ message }) => {
           </div>
         </div>
         <div className="chat-header">
-          {message.name}
+          <h3>{message.name}</h3>
         </div>
-        <div className="chat-bubble">{message.text}</div>
+        <div className="chat-bubble">
+          <h3>{message.text}</h3>
+        </div>
       </div>
     </div>
   );
