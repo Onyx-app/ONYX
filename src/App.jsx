@@ -10,6 +10,7 @@ import AddUsers from "./pages/AddUsers";
 import { PrivateRoute } from "./routes/PrivateRoute";
 import { PageProvider, usePageContext } from "./components/PageContext";
 import ContactForm from "./pages/ContactForm";
+import Explore from "./pages/Explore";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Dashboard />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="/project/:title" element={<ProjectDetail />} />
           <Route path="/new-project" element={<ProjectSubmit />} />
           <Route path="/add-user/:projectTitle" element={<AddUsers />} />

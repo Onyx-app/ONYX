@@ -141,6 +141,7 @@ const NavbarComp = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0">
+              <Nav.Link onClick={() => navigate('/explore')}>Explore</Nav.Link>
               <Nav.Link onClick={() => navigate('/contact')}>Contact</Nav.Link>
               {currentUser ? (
                 <>
