@@ -11,6 +11,7 @@ const ProjectSubmit = () => {
     intro: '',
     email: '',
     github: '',
+    owner: username,
     message: '',
     users: username + ',',
   });

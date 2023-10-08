@@ -32,6 +32,7 @@ const ProjectDetail = () => {
           <h1 className="project-detail-title">{project.title}</h1>
           <div className="project-detail-info">
             <p className="project-detail-intro">Description: {project.intro}</p>
+            <p className="project-detail-intro">Owner: {project.owner}</p>
             <p className="project-detail-email">Contact: {project.email}</p>
             <p className="project-detail-email">Github: {project.github}</p>
           </div>
