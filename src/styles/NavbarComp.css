@@ -1,0 +1,51 @@
+
+
+  .navbar-search-results-right {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .navbar-search-results-right .card {
+    cursor: pointer;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+  }
+  
+  .navbar-search-results-right .card:last-child {
+    border-bottom: none;
+  }
+  
+  .navbar-search-results-right .card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navbar-search-results-right .card-title {
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  .navbar-search-results-right .card-title:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-search-results-right .btn {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+  }
+  
+.view-project-button {
+    padding: 0.25rem 0.5rem;
+    font-size: 14px;
+  }
+  
+  
