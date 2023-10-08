@@ -18,11 +18,20 @@ const NavbarComp = () => {
   const { projectTitle } = usePageContext();
   const location = useLocation();
   const { currentUser, logout } = UserAuth();
+  const { signinWithGoogle } = UserAuth();
   const navigate = useNavigate();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   var searchBarView = true;
+
+  const handleLogin = async () => {
+    try {
+      await signinWithGoogle();
+    } catch(error) {
+      console.log(error)
+    }
+  }
 
   const handleLogout = async () => {
     try {
@@ -118,11 +127,11 @@ const NavbarComp = () => {
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
             {currentUser ? (
               <>
-                <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
                 {renderButtons()}
+                <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
               </>
             ) : (
-              ''
+              <Nav.Link onClick={handleLogin}>Login</Nav.Link>
             )}
           </Nav>
           <Row className="ml-auto mr-0">

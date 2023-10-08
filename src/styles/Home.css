@@ -1,0 +1,73 @@
+body {
+  position: relative;
+  height: 100vh;
+  background: url('/images/galaxynightlandscape-1@2x.png') center/cover no-repeat;
+}
+
+.label {
+  position: absolute;
+  top: 220px;
+  left: 22%;
+  transform: translateX(-50%);
+}
+
+.label .text-wrapper {
+  color:white;
+  font-family: "Poppins-Black", Helvetica;
+  font-size: 130px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 143px;
+  white-space: nowrap;
+  right: 10%;
+}
+
+.content {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.content p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.btn-primary-primary {
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+.btn-explore-projects {
+align-items: center;
+background-color: #ffffff;
+border-radius: 50px;
+display: flex;
+gap: 10px;
+height: 43px;
+overflow: hidden;
+padding: 10px 20px;
+position: relative;
+width: 217px;
+}
+
+.btn-explore-projects .text-wrapper {
+color: #dce3e7;
+font-family: "Poppins-Medium", Helvetica;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 35px;
+position: relative;
+white-space: nowrap;
+width: fit-content;
+}
+
+.btn-explore-projects .vector {
+height: 14.73px;
+margin-right: -1px;
+position: relative;
+width: 26px;
+}
