@@ -8,8 +8,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID, import.meta.env.VITE_EMAIL_TEMPLATE_ID, 
-                                            form.current, import.meta.env.VITE_EMAIL_PUBLIC_KEY)
+      .sendForm(import.meta.env.VITE_EMAIL_SERVICE_ID,
+              import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+              form.current, 
+              import.meta.env.VITE_EMAIL_PUBLIC_KEY)
       .then(
         (result) => {
           console.log(result.text);
@@ -21,25 +23,27 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-container">
-      <h2>Contact Us</h2>
-      <form className="contact-form" ref={form} onSubmit={sendEmail}>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" name="from_name" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input type="email" name="from_email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea type="text" name="message" required />
-        </div>
-        <button className="submit-button" type="submit">
-          Submit
-        </button>
-      </form>
+    <div className="center-container">
+      <div className="form-container">
+        <h2>Contact Us</h2>
+        <form className="contact-form" ref={form} onSubmit={sendEmail}>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input type="text" name="from_name" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" name="from_email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea type="text" name="message" required />
+          </div>
+          <button className="submit-button" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
