@@ -34,43 +34,40 @@ const Dashboard = () => {
         const data = snapshot.val();
         if (data) {
           const allProjects = Object.values(data);
-  
-          console.log("current user: " +currentUserUsername);
+
           const myProjectsData = allProjects.filter((project) =>
             project.users.includes(`${currentUserUsername}`)
           );
-  
-          console.log("my: " +  myProjectsData);
+
           setMyProjects(myProjectsData);
         }
       });
-  
+
       // Fetch all recommended projects
       dataRef.ref('projects').once('value', (snapshot) => {
         const data = snapshot.val();
         if (data) {
           const allProjects = Object.values(data);
-  
+
           const filteredRecommendedProjects = allProjects.filter(
             (project) => !project.users.includes(`${currentUserUsername}`)
           );
-  
+
           const shuffledRecommendedProjects = shuffleArray(
             filteredRecommendedProjects
           );
-  
+
           // Select the first 5 projects
           const selectedRecommendedProjects = shuffledRecommendedProjects.slice(
             0,
             5
           );
-  
+
           setRecommendedProjects(selectedRecommendedProjects);
         }
       });
     }
   }, [currentUserUsername]);
-  
 
   // Shuffle projects randomly
   const shuffleArray = (array) => {
@@ -82,17 +79,32 @@ const Dashboard = () => {
     return shuffledArray;
   };
 
+  const notFound = {
+    title: 'No projects created',
+    intro: 'click here to create'
+  }
+
   return (
     <div className="projects-page">
       <section className="my-projects">
         <h1 className="section-title">My Projects</h1>
-        <div className="project-list">
-          {myProjects.map((project) => (
-            <Link key={project.title} to={`/project/${encodeURIComponent(project.title)}`}>
-              <ProjectCard project={project} />
+        {myProjects.length === 0 ? (
+          <div className="not-found">
+          <div className="center-content">
+            <Link key="notFound" to={`/new-project`}>
+              <p><ProjectCard project={notFound} /> </p>
             </Link>
-          ))}
-        </div>
+          </div>
+        </div>        
+        ) : (
+          <div className="project-list">
+            {myProjects.map((project) => (
+              <Link key={project.title} to={`/project/${encodeURIComponent(project.title)}`}>
+                <ProjectCard project={project} />
+              </Link>
+            ))}
+          </div>
+        )}
       </section>
 
       <section className="recommended-projects">

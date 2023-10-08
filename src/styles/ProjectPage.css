@@ -19,13 +19,13 @@
 }
 
 .project-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #e2e3ee;
+  border-radius: 65px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 10px;
   width: 300px;
-  background-color: #fff;
+  background-color: #b6b198;
   transition: transform 0.2s ease;
 }
 
@@ -47,4 +47,13 @@
 
 .project-card:hover {
   transform: scale(1.05);
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+}
+
+.center-content {
+  text-align: center;
 }

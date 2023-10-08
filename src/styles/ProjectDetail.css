@@ -1,0 +1,42 @@
+.project-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.project-detail-card {
+    background-color: #b6b198;
+    border: 5px solid #e2e3ee;
+    border-radius: 65px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.project-detail-title {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    top: 5px;
+    left: 50px;
+    margin-bottom: 10px;
+}
+
+.project-detail-info p {
+    margin-left: 30px;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+}
+
+.project-detail-message {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 19px;
+    color: black;
+    text-align: left;
+}
