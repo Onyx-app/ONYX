@@ -100,15 +100,17 @@ const NavbarComp = () => {
             className="cursor-pointer"
           >
             <Card.Body>
-              <div className="d-flex justify-content-between align-items-center">
-                <Card.Title>{result}</Card.Title>
-                <Button
+              <div className="align-items-left">
+                <Card.Title>
+                  <h4>{result}</h4>
+                </Card.Title>
+                {/*<Button
                   variant="primary"
                   style={{ width: '100px', height: '30px' }}
                   onClick={handleViewProjectClick}
                 >
                   View Project
-                </Button>
+                </Button>*/}
               </div>
             </Card.Body>
           </Card>
