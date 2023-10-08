@@ -49,8 +49,9 @@ const AddUsers = ({ projectTitle }) => {
   };
   
   return (
+    <div className='center-container'>
     <div className="form-container">
-      <h1>Your project details</h1>
+      <h1>User mail id</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="users">Email</label>
@@ -65,6 +66,7 @@ const AddUsers = ({ projectTitle }) => {
         </div>
         <button type="submit">Add user</button>
       </form>
+    </div>
     </div>
   );
 };
