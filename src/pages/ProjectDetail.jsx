@@ -13,9 +13,6 @@ const ProjectDetail = () => {
     const decodedTitle = decodeURIComponent(title);
     setProjectTitle(decodedTitle);
     console.log(decodedTitle);
-    const user = auth.currentUser;
-    const userEmail = user.email;
-    const username = userEmail.split('@')[0];
     const sanitizedTitle = decodedTitle.replace(/\s+/g, '_');
     const projectRef = dataRef.ref('projects/' + sanitizedTitle);
 
